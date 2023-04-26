@@ -1,0 +1,38 @@
+$primary-color: #a21616;
+$primary-color-darker: darken($primary-color, 20%);
+$primary-color-lighter: lighten($primary-color, 10%);
+$button-bg-color: #FEFEFE;
+$button2-bg-color: #2e8563;
+
+a {
+    color: $primary-color;
+}
+
+.bg-darker {
+    background-color: $primary-color-darker;
+}
+
+.bg-lighter {
+    background-color: $primary-color-lighter;
+}
+
+%button-shared {
+    border: none; 
+    display: inline-block;
+    font-family: inherit; 
+    background-color: $button-bg-color;
+    color: $primary-color;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: opacity 0.9s;
+}
+
+.button {
+    @extend %button-shared;
+}
+
+.button__secondary {
+    @extend %button-shared;
+    background-color: $button2-bg-color;
+}
