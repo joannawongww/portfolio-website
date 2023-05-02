@@ -162,6 +162,10 @@ input:hover, input:focus {
     margin: 0 auto;
 }
 
+.projects {
+    text-align: center;
+}
+
 .page-header {
     display: flex;
     width: 100%;
