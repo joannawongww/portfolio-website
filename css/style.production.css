@@ -95,10 +95,6 @@ button:hover, button:focus,
     color: #3b8063;
 }
 
-.navigation-list__item--active {
-    text-decoration: none;
-}
-
 input {
     background-color: #FFFFFF;
     color: undefined;
@@ -220,6 +216,16 @@ input:hover, input:focus {
             box-sizing: border-box;
 }
 
+.contact {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects {
+    text-align: center;
+}
+
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,10 +256,6 @@ input:hover, input:focus {
     margin-left: 15px;
 }
 
-.navigation-list__item--active {
-    text-decoration: none;
-}
-
 .page-footer {
     clear: both;
     display: -webkit-box;
@@ -264,6 +266,18 @@ input:hover, input:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+}
+
+form select,form input,form textarea {
+    margin:5px 0;
+    display:inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+form label{
+    display:inline-block;
+    min-width:10%;
 }
 
 .grid-container {
